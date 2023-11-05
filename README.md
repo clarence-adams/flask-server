@@ -2,7 +2,14 @@
 My first flask server
 
 # Steps for local development:
+## Docker (recommended)
+```docker
+docker build -t flask_server
+docker run -d -p 5000:5000 flask_server
 ```
+
+## Python
+```python
 python -m venv venv
 source venv/bin/activate
 python -m pip install -r requirements.txt
